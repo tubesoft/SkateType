@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SkateType.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>A92EADDF1D8DA4AE00E1C396</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A92EADF51D8DA4D000E1C396</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -15,6 +15,9 @@
 		A92EADCF1D8DA4AE00E1C396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92EADCD1D8DA4AE00E1C396 /* LaunchScreen.storyboard */; };
 		A92EADDA1D8DA4AE00E1C396 /* NewInputMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92EADD91D8DA4AE00E1C396 /* NewInputMethodTests.swift */; };
 		A92EADE51D8DA4AE00E1C396 /* NewInputMethodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92EADE41D8DA4AE00E1C396 /* NewInputMethodUITests.swift */; };
+		A92EADF91D8DA4D000E1C396 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92EADF81D8DA4D000E1C396 /* KeyboardViewController.swift */; };
+		A92EADFD1D8DA4D000E1C396 /* SkateType.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A92EADF61D8DA4D000E1C396 /* SkateType.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A932242D1D8E2FA70093A649 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = A932242C1D8E2FA70093A649 /* Keyboard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,28 @@
 			remoteGlobalIDString = A92EADBD1D8DA4AE00E1C396;
 			remoteInfo = NewInputMethod;
 		};
+		A92EADFB1D8DA4D000E1C396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A92EADB61D8DA4AE00E1C396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A92EADF51D8DA4D000E1C396;
+			remoteInfo = SkateType;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A92EAE011D8DA4D000E1C396 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A92EADFD1D8DA4D000E1C396 /* SkateType.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A92EADBE1D8DA4AE00E1C396 /* NewInputMethod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewInputMethod.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +73,10 @@
 		A92EADE01D8DA4AE00E1C396 /* NewInputMethodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewInputMethodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92EADE41D8DA4AE00E1C396 /* NewInputMethodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInputMethodUITests.swift; sourceTree = "<group>"; };
 		A92EADE61D8DA4AE00E1C396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92EADF61D8DA4D000E1C396 /* SkateType.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SkateType.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92EADF81D8DA4D000E1C396 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		A92EADFA1D8DA4D000E1C396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A932242C1D8E2FA70093A649 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A92EADF31D8DA4D000E1C396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +117,7 @@
 				A92EADC01D8DA4AE00E1C396 /* NewInputMethod */,
 				A92EADD81D8DA4AE00E1C396 /* NewInputMethodTests */,
 				A92EADE31D8DA4AE00E1C396 /* NewInputMethodUITests */,
+				A92EADF71D8DA4D000E1C396 /* SkateType */,
 				A92EADBF1D8DA4AE00E1C396 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +128,7 @@
 				A92EADBE1D8DA4AE00E1C396 /* NewInputMethod.app */,
 				A92EADD51D8DA4AE00E1C396 /* NewInputMethodTests.xctest */,
 				A92EADE01D8DA4AE00E1C396 /* NewInputMethodUITests.xctest */,
+				A92EADF61D8DA4D000E1C396 /* SkateType.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +165,16 @@
 			path = NewInputMethodUITests;
 			sourceTree = "<group>";
 		};
+		A92EADF71D8DA4D000E1C396 /* SkateType */ = {
+			isa = PBXGroup;
+			children = (
+				A92EADF81D8DA4D000E1C396 /* KeyboardViewController.swift */,
+				A92EADFA1D8DA4D000E1C396 /* Info.plist */,
+				A932242C1D8E2FA70093A649 /* Keyboard.xib */,
+			);
+			path = SkateType;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +185,12 @@
 				A92EADBA1D8DA4AE00E1C396 /* Sources */,
 				A92EADBB1D8DA4AE00E1C396 /* Frameworks */,
 				A92EADBC1D8DA4AE00E1C396 /* Resources */,
+				A92EAE011D8DA4D000E1C396 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A92EADFC1D8DA4D000E1C396 /* PBXTargetDependency */,
 			);
 			name = NewInputMethod;
 			productName = NewInputMethod;
@@ -184,6 +233,23 @@
 			productReference = A92EADE01D8DA4AE00E1C396 /* NewInputMethodUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A92EADF51D8DA4D000E1C396 /* SkateType */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92EADFE1D8DA4D000E1C396 /* Build configuration list for PBXNativeTarget "SkateType" */;
+			buildPhases = (
+				A92EADF21D8DA4D000E1C396 /* Sources */,
+				A92EADF31D8DA4D000E1C396 /* Frameworks */,
+				A92EADF41D8DA4D000E1C396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkateType;
+			productName = SkateType;
+			productReference = A92EADF61D8DA4D000E1C396 /* SkateType.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +277,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = A92EADBD1D8DA4AE00E1C396;
 					};
+					A92EADF51D8DA4D000E1C396 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3KPPVYM38R;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = A92EADB91D8DA4AE00E1C396 /* Build configuration list for PBXProject "NewInputMethod" */;
@@ -229,6 +300,7 @@
 				A92EADBD1D8DA4AE00E1C396 /* NewInputMethod */,
 				A92EADD41D8DA4AE00E1C396 /* NewInputMethodTests */,
 				A92EADDF1D8DA4AE00E1C396 /* NewInputMethodUITests */,
+				A92EADF51D8DA4D000E1C396 /* SkateType */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +327,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92EADF41D8DA4D000E1C396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A932242D1D8E2FA70093A649 /* Keyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +367,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A92EADF21D8DA4D000E1C396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92EADF91D8DA4D000E1C396 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,6 +387,11 @@
 			isa = PBXTargetDependency;
 			target = A92EADBD1D8DA4AE00E1C396 /* NewInputMethod */;
 			targetProxy = A92EADE11D8DA4AE00E1C396 /* PBXContainerItemProxy */;
+		};
+		A92EADFC1D8DA4D000E1C396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A92EADF51D8DA4D000E1C396 /* SkateType */;
+			targetProxy = A92EADFB1D8DA4D000E1C396 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,6 +511,7 @@
 		A92EADEA1D8DA4AE00E1C396 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3KPPVYM38R;
 				INFOPLIST_FILE = NewInputMethod/Info.plist;
@@ -431,6 +525,7 @@
 		A92EADEB1D8DA4AE00E1C396 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3KPPVYM38R;
 				INFOPLIST_FILE = NewInputMethod/Info.plist;
@@ -499,6 +594,32 @@
 			};
 			name = Release;
 		};
+		A92EADFF1D8DA4D000E1C396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3KPPVYM38R;
+				INFOPLIST_FILE = SkateType/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tubesoft.NewInputMethod.SkateType;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A92EAE001D8DA4D000E1C396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3KPPVYM38R;
+				INFOPLIST_FILE = SkateType/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tubesoft.NewInputMethod.SkateType;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -518,6 +639,7 @@
 				A92EADEB1D8DA4AE00E1C396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A92EADEC1D8DA4AE00E1C396 /* Build configuration list for PBXNativeTarget "NewInputMethodTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +648,7 @@
 				A92EADEE1D8DA4AE00E1C396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A92EADEF1D8DA4AE00E1C396 /* Build configuration list for PBXNativeTarget "NewInputMethodUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +657,16 @@
 				A92EADF11D8DA4AE00E1C396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92EADFE1D8DA4D000E1C396 /* Build configuration list for PBXNativeTarget "SkateType" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92EADFF1D8DA4D000E1C396 /* Debug */,
+				A92EAE001D8DA4D000E1C396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
